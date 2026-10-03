@@ -1,0 +1,17 @@
+# Java build output
+*.class
+out/
+build/
+target/
+
+# IntelliJ IDEA
+.idea/
+*.iml
+
+# OS/editor files
+.DS_Store
+Thumbs.db
+.vscode/
+
+# Generated runtime output
+cpusim.txt
