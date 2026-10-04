@@ -1,0 +1,38 @@
+name: Java CI
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+permissions:
+  contents: read
+
+jobs:
+  analyze-java:
+    name: Analyze Java Code
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Java
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+
+      - name: Compile each project
+        shell: bash
+        run: |
+          set -euo pipefail
+          while IFS= read -r dir; do
+            echo "Compiling $dir"
+            (
+              cd "$dir"
+              javac *.java
+              rm -f -- *.class
+            )
+          done < <(find . -type f -name '*.java' -printf '%h\n' | sort -u)
