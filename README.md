@@ -1,5 +1,7 @@
 # SENG 505 - Java Applications
 
+[![Java CI](https://github.com/avery-holmes/SENG505-Java-Applications/actions/workflows/java-ci.yml/badge.svg)](https://github.com/avery-holmes/SENG505-Java-Applications/actions/workflows/java-ci.yml) [![CodeQL](https://github.com/avery-holmes/SENG505-Java-Applications/actions/workflows/codeql.yml/badge.svg)](https://github.com/avery-holmes/SENG505-Java-Applications/actions/workflows/codeql.yml)
+
 Curated Java coursework from **SENG 505: Programming Applications with Java** at West Virginia University. This repository highlights my progression from introductory console programs into object-oriented programming, collections, custom data structures, recursion, stacks/queues, file/network I/O, validation, and simulation.
 
 ## Course context and authorship
@@ -52,4 +54,4 @@ Each featured project README identifies its main class and any runtime behavior 
 
 ## About me
 
-I am a software engineering graduate student transitioning from enterprise risk/governance into software development. My current work has moved beyond these Java foundations into mobile development with React Native/TypeScript and full-stack product development. This repository is retained as evidence of the Java foundation and problem-solving progression behind that transition.
+I am a software engineering graduate student transitioning from enterprise risk/governance into software development. My current work has moved beyond these Java foundations into mobile development with React Native/TypeScript and broader software product development. This repository is retained as evidence of the Java foundation and problem-solving progression behind that transition.
